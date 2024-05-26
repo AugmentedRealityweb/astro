@@ -32,12 +32,15 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;  /* Asigură-te că iframe-ul este deasupra video-ului */
 }
 
 iframe {
-    width: 270px;
-    height: 595px;
+    width: 90vw;
+    max-width: 300px;
+    height: 80vh;
+    max-height: 600px;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow: auto;
 }
