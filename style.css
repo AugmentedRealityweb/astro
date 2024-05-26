@@ -88,8 +88,8 @@ body, html {
 }
 
 iframe {
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    height: 600px;
     border: none;
     border-radius: 40px;
     overflow: auto;
