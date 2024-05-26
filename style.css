@@ -1,0 +1,48 @@
+body {
+    background: url('https://via.placeholder.com/1500x1000') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.chat-header {
+    flex: 0 0 auto;
+}
+
+.chat-body {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.chat-footer {
+    flex: 0 0 auto;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+}
+
+.chat-message .message-content {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.chat-message .message-sender {
+    font-weight: bold;
+}
