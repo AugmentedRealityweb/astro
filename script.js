@@ -1,13 +1,25 @@
-// Exemplu de cod JavaScript pentru navigarea între zodii
+document.getElementById('sendBtn').addEventListener('click', function() {
+    var chatInput = document.getElementById('chatInput');
+    var chatBody = document.getElementById('chatBody');
+    var message = chatInput.value.trim();
 
-const zodiacCards = document.querySelectorAll('.zodiac-card');
+    if (message) {
+        var messageElement = document.createElement('div');
+        messageElement.classList.add('chat-message');
 
-zodiacCards.forEach(card => {
-    card.addEventListener('click', () => {
-        // Afișați informații specifice despre zodia selectată
-        const zodiacSign = card.querySelector('h2').textContent;
-        console.log('Zodia selectată:', zodiacSign);
+        var senderElement = document.createElement('div');
+        senderElement.classList.add('message-sender');
+        senderElement.textContent = 'You';
 
-        // Puteți folosi JavaScript pentru a afișa o modală sau o altă secțiune a paginii cu informații despre zodia selectată.
-    });
+        var contentElement = document.createElement('div');
+        contentElement.classList.add('message-content');
+        contentElement.textContent = message;
+
+        messageElement.appendChild(senderElement);
+        messageElement.appendChild(contentElement);
+
+        chatBody.appendChild(messageElement);
+        chatInput.value = '';
+        chatBody.scrollTop = chatBody.scrollHeight;
+    }
 });
