@@ -25,8 +25,8 @@ iframe {
     width: 90vw;
     max-width: 250px;
     height: 80vh;
-    max-height: 570px;
+    max-height: 590px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: auto;
 }
