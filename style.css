@@ -88,9 +88,9 @@ body, html {
 }
 
 iframe {
-    width: 600px;
+    width: 400px;
     height: 600px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: auto;
 }
