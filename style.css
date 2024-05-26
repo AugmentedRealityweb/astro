@@ -1,35 +1,42 @@
 body {
-    background: url('https://via.placeholder.com/1500x1000') no-repeat center center fixed;
+    background: url('path-to-your-background-image.png') no-repeat center center fixed;
     background-size: cover;
     color: white;
     font-family: Arial, sans-serif;
 }
 
+.navbar {
+    background-color: #1f1f1f !important;
+}
+
 .sidebar {
     height: 100vh;
     overflow-y: auto;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .chat-window {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .chat-header {
     flex: 0 0 auto;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #444;
 }
 
 .chat-body {
     flex: 1 1 auto;
     overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
+    padding: 20px;
 }
 
 .chat-footer {
     flex: 0 0 auto;
+    border-top: 1px solid #444;
 }
 
 .chat-message {
@@ -45,4 +52,9 @@ body {
 
 .chat-message .message-sender {
     font-weight: bold;
+    color: #ffcc00;
+}
+
+.sidebar .media-body h5 {
+    color: #ffcc00;
 }
