@@ -1,49 +1,64 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-h1 {
-    margin: 0;
-}
-
-.zodiac-section {
+    background: url('path-to-your-background-image.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 0;
 }
 
-.zodiac-card {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+.chat-oval {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 500px;
+    height: 700px;
     padding: 20px;
-    text-align: center;
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.zodiac-card img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+.chat-header h4 {
+    margin-bottom: 20px;
+    color: #ffcc00;
 }
 
-.zodiac-card h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
+.chat-body {
+    flex: 1 1 auto;
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.zodiac-card p {
-    font-size: 14px;
-    color: #666;
+.chat-footer {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.chat-footer .input-group {
+    width: 100%;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+}
+
+.chat-message .message-content {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.chat-message .message-sender {
+    font-weight: bold;
+    color: #ffcc00;
 }
